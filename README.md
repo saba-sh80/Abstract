@@ -1,75 +1,59 @@
-# React + TypeScript + Vite
+# Abstract - Help Center
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, component-driven web application inspired by the **Abstract Help Center** interface. This project was migrated from a static HTML/CSS template to a scalable, type-safe React architecture styled with **Tailwind CSS**.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🚀 Tech Stack
 
-## React Compiler
+- **Framework:** [React.js](https://react.dev/)
+- **Language:** [TypeScript](https://www.typescriptlang.org/)
+- **Styling:** [Tailwind CSS v4](https://tailwindcss.com/)
+- **Icons:** Custom SVGs
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## ✨ Features
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- **Component-Based Architecture:** Modular design featuring reusable components like `Navbar`, `Introduce`, `Option`, and `Form`.
+- **Type Safety:** Strongly typed components and data props using TypeScript interfaces (`OptionProps`, `NavbarProps`).
+- **Tailwind Utility First:** Styled entirely with utility classes.
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+---
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## 🛠️ Getting Started
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+Follow these steps to run the project locally on your machine:
 
+### Prerequisites
+
+Make sure you have **Node.js** and **npm** installed on your system.
+
+### Installation
+
+1. **Clone the repository:**
+   ```bash
+   git clone [https://github.com/Saba-Shirazi/Abstract.git](https://github.com/Saba-Shirazi/Abstract.git)
+   ```
+
+
+2.Navigate into the project directory:
+```Bash
+cd Abstract
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+3.Install dependencies:
+```Bash
+npm install
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-
+4.Start the development server:
+```Bash
+npm run dev
+# or `npm start` depending on your setup
 ```
+
+🗺️ Roadmap & Future Improvements
+- Mobile Responsiveness: Enhance Grid & Flexbox layouts for mobile and tablet screens.
+
+- Form Validation: Add client-side validation and interactive password toggles for the Sign-In page.
