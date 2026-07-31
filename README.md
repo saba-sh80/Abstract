@@ -32,9 +32,9 @@ Make sure you have **Node.js** and **npm** installed on your system.
 ### Installation
 
 1. **Clone the repository:**
-   ```bash
-   git clone [https://github.com/Saba-Shirazi/Abstract.git](https://github.com/Saba-Shirazi/Abstract.git)
-   ```
+```bash
+git clone [https://github.com/Saba-Shirazi/Abstract.git](https://github.com/Saba-Shirazi/Abstract.git)
+```
 
 
 2.Navigate into the project directory:
