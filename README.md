@@ -50,7 +50,6 @@ npm install
 4.Start the development server:
 ```Bash
 npm run dev
-# or `npm start` depending on your setup
 ```
 
 🗺️ Roadmap & Future Improvements
