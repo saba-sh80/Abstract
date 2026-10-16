@@ -1,45 +1,30 @@
 export const Footer = () => {
   return (
-    <div className="flex bg-black pb-10 px-0 m-0">
-      <div>
-        <div  className="w-[700px] h-[200px] grid grid-rows-1 grid-cols-4 ml-[70px] mt-[45px]">
-          <div>
-            <h5 className="text-gray-50 font-bold">Abstract</h5>
+    <div className="w-full grid xl:grid-cols-5 grid-cols-1 xl:grid-rows-1 gap-y-7 justify-items-center items-center bg-black py-10">
+      <div className="xl:col-span-3">
+        <div  className="w-full grid md:grid-rows-1 sm:grid-rows-2 grid-rows-4 md:grid-cols-4 sm:grid-cols-2 grid-cols-1 justify-items-start gap-7">
+          <div className="flex flex-col justify-items-start">
+            <h5 className="text-gray-50 font-bold">Company</h5>
             <ul>
               <a className="underline-none hover:underline text-gray-50" href="#">
-                Start Trial
+                About Us
               </a>
               <br />
               <a className="underline-none hover:underline text-gray-50" href="#">
-                Pricing
+                Careers
               </a>
               <br />
               <a className="underline-none hover:underline text-gray-50" href="#">
-                Download
+                Legal
+              </a>
+
+              <h6 className="text-gray-50 font-bold mt-1">Contact Us</h6>
+              <a className="underline-none hover:underline text-gray-50" href="#">
+                info@abstract.com
               </a>
             </ul>
           </div>
-          <div>
-            <h5 className="text-gray-50 font-bold">Resources</h5>
-            <ul>
-              <a className="underline-none hover:underline text-gray-50" href="#">
-                Blog
-              </a>
-              <br />
-              <a className="underline-none hover:underline text-gray-50" href="#">
-                Help Center
-              </a>
-              <br />
-              <a className="underline-none hover:underline text-gray-50" href="#">
-                Release Notes
-              </a>
-              <br />
-              <a className="underline-none hover:underline text-gray-50" href="#">
-                status
-              </a>
-            </ul>
-          </div>
-          <div>
+          <div className="flex flex-col justify-items-start">
             <h5 className="text-gray-50 font-bold">Community</h5>
             <ul>
               <a className="underline-none hover:underline text-gray-50" href="https://twitter.com/goabstract">
@@ -69,33 +54,48 @@ export const Footer = () => {
               </a>
             </ul>
           </div>
-          <div>
-            <h5 className="text-gray-50 font-bold">Company</h5>
+          <div className="flex flex-col justify-items-start">
+            <h5 className="text-gray-50 font-bold">Resources</h5>
             <ul>
               <a className="underline-none hover:underline text-gray-50" href="#">
-                About Us
+                Blog
               </a>
               <br />
               <a className="underline-none hover:underline text-gray-50" href="#">
-                Careers
+                Help Center
               </a>
               <br />
               <a className="underline-none hover:underline text-gray-50" href="#">
-                Legal
+                Release Notes
               </a>
-
-              <h6 className="text-gray-50 font-bold mb-0 ms-1 mt-4">Contact Us</h6>
-              <a className="underline-none hover:underline text-gray-50 ms-1 p-0" href="#">
-                info@abstract.com
+              <br />
+              <a className="underline-none hover:underline text-gray-50" href="#">
+                status
+              </a>
+            </ul>
+          </div>
+          <div className="flex flex-col justify-items-start">
+            <h5 className="text-gray-50 font-bold">Abstract</h5>
+            <ul>
+              <a className="underline-none hover:underline text-gray-50" href="#">
+                Start Trial
+              </a>
+              <br />
+              <a className="underline-none hover:underline text-gray-50" href="#">
+                Pricing
+              </a>
+              <br />
+              <a className="underline-none hover:underline text-gray-50" href="#">
+                Download
               </a>
             </ul>
           </div>
         </div>
       </div>
-      <div>
-        <div className="w-[280px] h-[150px] ml-[95px] mt-[202px]">
+      <div className="xl:col-span-2 flex justify-start items-center">
+        <div className="w-70 ml-17.5 xl:mt-50.5">
           <svg
-            className="w-[35px] h-[35px]"
+            className="w-8.75 h-8.75"
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 200 51"
             preserveAspectRatio="xMinYMid slice"
@@ -105,7 +105,7 @@ export const Footer = () => {
               <circle cx="21.24" cy="29.58" r="4.96"></circle>
             </g>
           </svg>
-          <p className="text-[20px] mt-3 text-gray-50">
+          <p className="text-lg mt-3 text-gray-50">
             © Copyright 2024
             <br />
             Abstract Studio Design, Inc.

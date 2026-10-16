@@ -1,3 +1,4 @@
+"use client"
 import { Option } from "./Option";
 
 export type OptionProps = {
@@ -50,8 +51,8 @@ export const introduce: OptionProps[] = [
 ];
 export const Introduce = () => {
   return (
-    <div className="min-h-screen flex justify-center justify-items-center">
-      <div className="w-250 grid grid-cols-2 grid-row-3 gap-x-28 my-24">
+    <div className="min-h-screen flex justify-center justify-items-center pt-24 lg:px-20 px-6">
+      <div className="lg:w-full w-1/2 grid lg:grid-cols-2 grid-cols-1 lg:grid-row-3 grid-rows-6 justify-center justify-items-center lg:gap-3">
         {introduce.map((item) => (
           <Option
             title={item.title}

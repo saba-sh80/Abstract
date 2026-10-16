@@ -1,17 +1,17 @@
+"use client";
 export const Navbar = () => {
   return (
-    <div className="w-full h-24 flex flex-row items-center justify-evenly bg-black px-10">
-      <div className="w-77 flex flex-row justify-between items-center">
-        <div className="flex flex-row-reverse justify-between items-center gap-x-1.5">
+    <div className="w-full h-24 flex flex-row items-center justify-evenly bg-black sm:px-10">
+      <div className="sm:w-77 w-52 flex flex-row items-center">
+        <div className="flex flex-row-reverse items-center sm:gap-x-1.5">
           <a
             href="#"
-            className="font-bold text-gray-50 no-underline inline-block text-2xl"
-            style={{ fontSize: "26px" }}
+            className="font-bold text-gray-50 no-underline inline-block sm:text-2xl text-sm"
           >
             Abstract
           </a>
           <svg
-            className="w-8 h-8"
+            className="sm:w-8 w-5 sm:h-8 h-5 mr-2"
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 200 51"
             preserveAspectRatio="xMinYMid slice"
@@ -58,27 +58,30 @@ export const Navbar = () => {
         </div>
         <a
           href="#"
-          className="text-gray-50 no-underline"
-          style={{ fontSize: "26px" }}
+          className="text-gray-50 no-underline sm:text-2xl text-sm"
         >
           | Help Center
         </a>
       </div>
       <div className="flex justify-center items-center gap-4">
         <button
-          className="hidden md:block w-52 h-12 text-[21px] bg-none border border-gray-50 text-gray-50 rounded-md cursor-pointer transition-all"
+          className="hidden md:block w-52 h-12 text-[21px] bg-none border border-gray-50 text-gray-50 hover:bg-gray-50 hover:text-black rounded-md cursor-pointer transition"
           onClick={() => (window.location.href = "./submit.html")}
         >
           Submit a request
         </button>
         <button
-          className="hidden md:block w-28 h-12 text-[21px] rounded-md cursor-pointer bg-indigo-600 text-gray-50 transition-all"
+          className="hidden md:block w-28 h-12 text-[21px] rounded-md cursor-pointer bg-indigo-600 hover:bg-indigo-700 text-gray-50 transition"
           onClick={() => (window.location.href = "./form.html")}
         >
           Sign in
         </button>
         <div className="flex justify-center items-center md:hidden">
-          <img src="./images/list.svg" alt="list-icon" className="w-12 h-12 mt-0" />
+          <img
+            src="./images/list.svg"
+            alt="list-icon"
+            className="sm:w-12 w-7 sm:h-12 h-7 mt-0 cursor-pointer"
+          />
         </div>
       </div>
     </div>
