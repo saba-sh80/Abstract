@@ -1,7 +1,7 @@
 "use client";
 export const Navbar = () => {
   return (
-    <div className="w-full h-24 flex flex-row items-center justify-evenly bg-black sm:px-10">
+    <div className="fixed w-full h-24 flex flex-row items-center justify-evenly bg-black sm:px-10">
       <div className="sm:w-77 w-52 flex flex-row items-center">
         <div className="flex flex-row-reverse items-center sm:gap-x-1.5">
           <a
@@ -58,7 +58,7 @@ export const Navbar = () => {
         </div>
         <a
           href="#"
-          className="text-gray-50 no-underline sm:text-2xl text-sm"
+          className="text-gray-50 no-underline sm:text-2xl text-sm ml-1.5"
         >
           | Help Center
         </a>
@@ -78,7 +78,7 @@ export const Navbar = () => {
         </button>
         <div className="flex justify-center items-center md:hidden">
           <img
-            src="./images/list.svg"
+            src="./icons/list.svg"
             alt="list-icon"
             className="sm:w-12 w-7 sm:h-12 h-7 mt-0 cursor-pointer"
           />

@@ -1,6 +1,6 @@
 export const SearchBox = () => {
   return (
-    <div className="w-full md:h-100 h-72 flex justify-center items-center bg-gray-300">
+    <div className="w-full md:h-100 h-72 flex justify-center items-center bg-gray-300 pt-20">
       <div className="flex flex-col justify-center items-center md:gap-3 sm:gap-1">
         <h2 className="md:text-7xl sm:text-4xl text-3xl text-black font-semibold">How can we help?</h2>
         <br />
