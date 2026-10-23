@@ -74,5 +74,15 @@ Then open http://localhost:3000 with your browser to see the application in acti
 
 ---
 
+<div align="center">
+
+⭐ If you liked this project, support it by giving it a star!
+
+Made with 🤍
+
+</div>
+
+---
+
 👤 Author
 Saba Shirazi
