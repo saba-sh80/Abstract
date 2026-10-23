@@ -1,4 +1,4 @@
-💎 #Abstract Website
+💎 Abstract Website
 
 A modern, responsive, and performant web application rebuilt using **Next.js 16 (App Router)**, **TypeScript**, and **Tailwind CSS**. 
 
